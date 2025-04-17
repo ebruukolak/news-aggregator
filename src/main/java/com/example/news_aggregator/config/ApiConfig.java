@@ -7,9 +7,15 @@ import org.springframework.context.annotation.Configuration;
 public class ApiConfig {
     @Value("${newsapi.key}")
     private String newsApiKey;
+    @Value("${guardianapi.key}")
+    private String guardianApiKey;
 
     public String getNewsApiKey()
     {
         return newsApiKey;
+    }
+
+    public String getGuardianApiKey(){
+        return guardianApiKey;
     }
 }
